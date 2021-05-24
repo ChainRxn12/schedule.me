@@ -20,7 +20,8 @@ main section {
 
 textarea {
   width: 70%;
-  margin-left: 10%;
+  margin-left: 5px;
+  margin-right: 5px;
   background: transparent;
   resize: none;
   border: 2px solid var(--darkBlue);
@@ -37,6 +38,18 @@ button {
   border-radius: 5%;
   color: var(--lightBlue);
   margin-left: 1px;
+}
+
+.timeBlock{
+  border-right:  1px dotted var(--darkBlue);
+  border-bottom: 1px dotted var(--darkBlue);
+  margin-left: 5%;
+} 
+@media screen and  (max-width: 800px){
+  .timeBlock{
+    font-size: 10px;
+    text-align: left;
+  }
 }
 
 hr {
