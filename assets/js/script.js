@@ -1,10 +1,8 @@
 //assign variables
 var timeDisplay = $('#time-display'); //get time display to work in jumbotron
-var scheduleInput = $('#schedule-input');//create text/schedule input for user
+var scheduleInputElement = $('#schedule-input');//create text/schedule input for user
 
-var currentTime;
 var scheduledTime;
-
 
 //display time function in jumbotron
 function displayTime() {
@@ -12,6 +10,12 @@ function displayTime() {
     timeDisplay.text(rightNow);
 }
 setInterval(displayTime, 1000);
+
+//define rows in 24hr format
+const rows = document.getElementsByClassName("row");
+let currentTime = parseInt(moment().format('H'));
+console.log(currentTime);
+
 
             //pseudocode//
 
@@ -31,3 +35,5 @@ setInterval(displayTime, 1000);
 //             no past class
 
 //need a function for color change colorChange()
+
+//save the users schedule input
