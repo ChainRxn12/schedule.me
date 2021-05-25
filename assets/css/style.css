@@ -1,6 +1,7 @@
 :root {
 --darkBlue: #153c92;
 --lightBlue: #9dd3e9;
+--flatPink: #9c94c7;
 }
 
 body {
@@ -32,24 +33,57 @@ textarea {
   padding: 10px;
 }
 
-button {
+.saveBtn {
   background: transparent;
   border: 1px solid var(--darkBlue);
   border-radius: 5%;
   color: var(--lightBlue);
   margin-left: 1px;
 }
+@media screen and (max-width: 767px){
+  .saveBtn {
+    margin-top: 2px;
+    margin-left: 40%;
+  }
+}
+
+.saveBtn:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
 
 .timeBlock{
   border-right:  1px dotted var(--darkBlue);
   border-bottom: 1px dotted var(--darkBlue);
   margin-left: 5%;
+  margin-top: 25px;
 } 
 @media screen and  (max-width: 800px){
   .timeBlock{
-    font-size: 10px;
+    font-size: 12px;
     text-align: left;
   }
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: var(--darkBlue);
+  color: var(--lightBlue);
+}
+
+.present {
+  background-color: var(--flatPink);
+  color: var(--darkBlue);
+}
+
+.future {
+  background-color: #000000;
+  color: var(--lightBlue);
 }
 
 hr {
