@@ -66,9 +66,8 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: transparent;
+  color: var(--darkBlue)
 }
 
 .past {
@@ -82,7 +81,7 @@ textarea {
 }
 
 .future {
-  background-color: #000000;
+  background-color: indigo;
   color: var(--lightBlue);
 }
 
