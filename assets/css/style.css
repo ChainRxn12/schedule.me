@@ -52,6 +52,33 @@ textarea {
   border: 1px solid #ffffff;
 }
 
+.clearBtn {
+  background: transparent;
+  border: 1px solid var(--darkBlue);
+  border-radius: 5%;
+  color: red;
+  margin-left: 1px;
+}
+
+@media screen and (max-width:1200px){
+  .clearBtn {
+    margin-left:50%;
+
+  }
+}
+
+@media screen and (max-width: 767px){
+  .clearBtn {
+    margin-top: 2px;
+    margin-left: 40%;
+  }
+}
+
+.clearBtn:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
 .timeBlock{
   border-right:  1px dotted var(--darkBlue);
   border-bottom: 1px dotted var(--darkBlue);
