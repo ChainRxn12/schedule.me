@@ -7,15 +7,15 @@
 
 ### Project Overview
 
-*The goal of this application was to create a simple calendar tool that could be used to schedule the hours of a normal work day.  
+* The goal of this application was to create a simple calendar tool that could be used to schedule the hours of a normal work day.  
 
-*The Schedule.ME application is able to display the current time and color codes each time block by the past, present, or future.  
+* The Schedule.ME application is able to display the current time and color codes each time block by the past, present, or future.  
 
-*The user of this application is able to select a timeblock and input whatever they would like to schedule into each time block hour.  
+* The user of this application is able to select a timeblock and input whatever they would like to schedule into each time block hour.  
 
-*The input can then be saved to the schedule by clicking the 'Clipboard' and cleared out by clicking the 'Clear' button.
+* The input can then be saved to the schedule by clicking the 'Clipboard' and cleared out by clicking the 'Clear' button.
 
-*The user's events will be saved even upon refreshing.
+* The user's events will be saved even upon refreshing.
 
 #### Screenshots
 
