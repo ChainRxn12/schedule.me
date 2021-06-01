@@ -3,7 +3,10 @@ var timeDisplay = $("#time-display"); //get time display to work in jumbotron
 // var scheduleInputElement = $(".schedule-input").attr("id"); //create text/schedule input for user
 var currentHour = moment().hour();
 var scheduleInput = $(".schedule-input");
+var userInput = $(".userText");
+var clipboard = $(".saveBtn");
 
+var input= [];
 
 //display time function in jumbotron
 function displayTime() {
@@ -31,28 +34,40 @@ scheduleInput.each(function () {
         $(this).addClass ("future");
     }
   });
-  
 
-//loads when page is available
-// $(document).ready(function() {
-//    // colorChange();
-//     textOutput();
-// });
+function renderInput(){
+    userInput.innerHTML="";
+}
 
-//clipboard/savebtn functionality
-// $('.saveBtn').click(function(){
-//     scheduleText = $(this).sibling('.schedule-input').val();
-//     console.log(scheduleText);
-//     localStorage.setItem(scheduleTime, JSON.stringify(scheduleText));
+//this function is being called below and runs when page loads
+function init() {
+    //get stored input from localStorage
+    var storedInput = JSON.parse(localStorage.getItem("input"));
+    renderInput();
+}
 
-//     textOutput();
-// });
+function storedInput(){
+    localStorage.setItem("input", JSON.stringify(input));
+}
 
+//submit item to clipboard
+$('.saveBtn').on('click', function(event){
+    event.preventDefault();
 
+    var userText = userInput.value();
+
+    if (userText === ""){
+        return;
+    }
+    storedInput();
+    renderInput();
+});
 
 //pseudocode//
 
-//need a function for color change colorChange()
+// //when user types something into textArea and clicks the clipboard
+// //what happens? input needs to set
+//                 input needs to save to local storage
 
 
 //console.log(moment().hour());
@@ -92,3 +107,4 @@ scheduleInput.each(function () {
 
 // }
 
+init();
