@@ -1,6 +1,5 @@
 //assign variables
 var timeDisplay = $("#time-display"); //get time display to work in jumbotron
-// var scheduleInputElement = $(".schedule-input").attr("id"); //create text/schedule input for user
 var currentHour = moment().hour();
 var scheduleInput = $(".schedule-input");
 
@@ -11,13 +10,6 @@ function displayTime() {
   timeDisplay.text(rightNow);
 }
 setInterval(displayTime, 1000);
-
-//define rows in 24hr format
-// const rows = document.getElementsByClassName("row");
-// var currentTime = parseInt(moment().format("H"));
-// console.log(currentTime);
-
-
 
 //use each loop to add class to each time block according to current time
 scheduleInput.each(function () {
@@ -34,12 +26,12 @@ scheduleInput.each(function () {
     }
   });
 
-
-
+//ensures DOM is ready to execute
 $(document).ready(function(){
     renderInput();
 });
 
+//save and clear buttons + event listener + functions
 var userInput;
 var eventTime;
 
@@ -66,55 +58,55 @@ $(".clearBtn").click(function() {
 });
 
 function renderInput() {
-    var textBox7 = JSON.parse(localStorage.getItem("7 am"));
+    var textBox7 = JSON.parse(localStorage.getItem("07am"));
     $("#7").val("");
     $("#7").val(textBox7);
 
-    var textBox8 = JSON.parse(localStorage.getItem("8 am"));
+    var textBox8 = JSON.parse(localStorage.getItem("08am"));
     $("#8").val("");
-    $("#8").val(textBox7);
+    $("#8").val(textBox8);
 
-    var textBox9 = JSON.parse(localStorage.getItem("9 am"));
+    var textBox9 = JSON.parse(localStorage.getItem("09am"));
     $("#9").val("");
-    $("#9").val(textBox7);
+    $("#9").val(textBox9);
 
-    var textBox10 = JSON.parse(localStorage.getItem("10 am"));
+    var textBox10 = JSON.parse(localStorage.getItem("10am"));
     $("#10").val("");
-    $("#10").val(textBox7);
+    $("#10").val(textBox10);
 
-    var textBox11 = JSON.parse(localStorage.getItem("11 am"));
+    var textBox11 = JSON.parse(localStorage.getItem("11am"));
     $("#11").val("");
-    $("#11").val(textBox7);
+    $("#11").val(textBox11);
 
-    var textBox12 = JSON.parse(localStorage.getItem("12 pm"));
+    var textBox12 = JSON.parse(localStorage.getItem("12pm"));
     $("#12").val("");
-    $("#12").val(textBox7);
+    $("#12").val(textBox12);
 
-    var textBox13 = JSON.parse(localStorage.getItem("01 pm"));
+    var textBox13 = JSON.parse(localStorage.getItem("01pm"));
     $("#13").val("");
-    $("#13").val(textBox7);
+    $("#13").val(textBox13);
 
-    var textBox14 = JSON.parse(localStorage.getItem("02 pm"));
+    var textBox14 = JSON.parse(localStorage.getItem("02pm"));
     $("#14").val("");
-    $("#14").val(textBox7);
+    $("#14").val(textBox14);
 
-    var textBox15 = JSON.parse(localStorage.getItem("03 pm"));
+    var textBox15 = JSON.parse(localStorage.getItem("03pm"));
     $("#15").val("");
-    $("#15").val(textBox7);
+    $("#15").val(textBox15);
 
-    var textBox16 = JSON.parse(localStorage.getItem("04 pm"));
+    var textBox16 = JSON.parse(localStorage.getItem("04pm"));
     $("#16").val("");
-    $("#16").val(textBox7);
+    $("#16").val(textBox16);
 
-    var textBox17 = JSON.parse(localStorage.getItem("05 pm"));
+    var textBox17 = JSON.parse(localStorage.getItem("05pm"));
     $("#17").val("");
-    $("#17").val(textBox7);
+    $("#17").val(textBox17);
 
-    var textBox18 = JSON.parse(localStorage.getItem("06 pm"));
+    var textBox18 = JSON.parse(localStorage.getItem("06pm"));
     $("#18").val("");
     $("#18").val(textBox18);
 
-    var textBox19 = JSON.parse(localStorage.getItem("07 pm"));
+    var textBox19 = JSON.parse(localStorage.getItem("07pm"));
     $("#19").val("");
     $("#19").val(textBox19);
 };
