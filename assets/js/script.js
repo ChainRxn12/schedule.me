@@ -54,10 +54,11 @@ function storedInput(){
 $('.saveBtn').on('click', function(event){
     event.preventDefault();
 
-    var userText = userInput.value();
+    let input = $(this).siblings(".userText")[0];
+    var userText = input.value;
 
     if (userText === ""){
-        return;
+        return ('userText');
     }
     storedInput();
     renderInput();
