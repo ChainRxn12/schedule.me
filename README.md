@@ -2,10 +2,12 @@
 
 ## Table of Contents
 * [Project Overview](#Project-overview)
+* [Technology Used](#Technology-used)
 * [Screenshots](#Screenshots)
 * [Deployed URL](#Deployed-url)
+* [Future Development](#Future-development)
 
-### Project Overview
+## Project Overview
 
 * The goal of this application was to create a simple calendar tool that could be used to schedule the hours of a normal work day.  
 
@@ -17,13 +19,26 @@
 
 * The user's events will be saved even upon refreshing.
 
-#### Screenshots
+## Technology Used
+
+* CSS
+* HTML
+* Bootstrap
+* JavaScript
+* Moment
+* JQuery
+
+## Screenshots
 
 
 ![screencapture schedule](https://user-images.githubusercontent.com/78969397/120340015-40fe1b80-c2bb-11eb-9b66-9aeeeab0e8f5.png)
 
 
 
-##### Deployed URL
+## Deployed URL
 
 [Schedule.ME](https://chainrxn12.github.io/schedule.me/ "Schedule.ME Home")
+
+## Future Development
+
+* Nothing yet... 
