@@ -6,6 +6,7 @@
 * [Screenshots](#Screenshots)
 * [Deployed URL](#Deployed-url)
 * [Future Development](#Future-development)
+* [Contact Info](#Contact-info)
 
 ## Project Overview
 
@@ -42,3 +43,8 @@
 ## Future Development
 
 * Nothing yet... 
+
+## Contact Info
+
+* Phone: 512-658-0469
+[linkedIn](https://www.linkedin.com/in/billy-dorman-b51129205/ "LinkedIn Home")
